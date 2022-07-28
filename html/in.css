@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald';
+}
+body{
+    display:  flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg,#838996, #969083)
+}
+.container{
+    max-width: 800px;
+    width: 100%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 7px;
+}
+.container .title{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;    
+}
+.container .title ::before{
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    background: linear-gradient(135deg,#E41B17,#00BFFF);
+}
+.container form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+form .user-details .input-box{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+
+}
+.user-details .input-box .details{
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.user-details .input-box input{
+    height: 40px;
+    width: 100%;
+    outline: none;
+    border-radius:  7px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:focus{
+    border-color : #0909FF;
+}
+form .button{
+    height: 40px;
+    margin: 30px 0;
+}
+form .button input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 7px;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg,#838996, #969083)
+}
+form .button input:hover{
+    background:  linear-gradient(135deg,#E41B17,#00BFFF);
+}
+.logo .logo1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+@media (max-width: 584px){
+    .container{
+        max-width: 100%;
+    }
+    form .user-details .input-box{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    .container form .user-details{
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+    .user-details::-webkit-scrollbar{
+        width: 0;
+    }
+}

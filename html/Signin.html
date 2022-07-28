@@ -1,0 +1,51 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>
+            Let us Signin
+        </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="{{ url_for('static', path='\inn.css') }}" rel="stylesheet">
+    </head>
+    <body>
+        <section>
+            <div class="imgbx">
+                <img src="{{ url_for('static', path='\image.jpg') }}" alt="img loading">
+            </div>
+            <div class="contentbx">
+                    <div class="formbx">
+                        <h2>Signin</h2>
+                        <form action="/submit" method="post">
+                            <div class="inputbx">
+                                <span>Username</span>
+                                <input type="text"  placeholder="Enter the username" name="username">
+                            </div>
+                            <div class="inputbx">
+                                <span>Password</span>
+                                <input type="password" placeholder="password" name="password">
+                            </div>
+                            <div class="remember">
+                                <label><input type="checkbox" name="">Remember me</label>
+                            </div>
+                            <div class="inputbx">
+                                <input type="submit" value="Signin" name="">
+                            </div>
+                            
+                        </form>
+                        <form action="/register" method="get">
+                        <div class="inputbx">
+                            <input type="submit" value="Signup" name="">
+                        </div>
+                        </form>
+                        <h3>Signin with</h3>
+                        <ul class="sci">
+                            <li><img src="go.png"></li>
+                        </ul>
+                    </div>
+            </div>
+        </section>
+    </body>
+</html>

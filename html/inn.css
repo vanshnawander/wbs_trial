@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald';
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+section .imgbx{
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+section .imgbx:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(225deg,#838996, #969083);
+    z-index: 1;
+    mix-blend-mode: screen;
+}
+section .imgbx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+section .contentbx{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+section .contentbx .formbx{
+    width: 50%;
+}
+section .contentbx .formbx h2{
+    color: #E41B17;
+    font-weight: 600;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    border-bottom: 4px solid #607d8b;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+section .contentbx .formbx .inputbx{
+    margin-bottom: 20px;
+}
+section .contentbx .formbx .inputbx span{
+    font-size: 16px;
+    margin-bottom:  5px;
+    display: inline-block;
+    color: #607d8b;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+section .contentbx .formbx .inputbx input{
+    width: 100%;
+    padding: 10px 25px;
+    outline: none;
+    font-weight: 400;
+    border: 1px solid #607d8b;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #607d8b;
+    background: transparent;
+    border-radius: 20px;
+}
+section .contentbx .formbx .inputbx input[type="submit"]{
+    background: linear-gradient(225deg,#838996, #969083) ;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+section .contentbx .formbx .inputbx input[type="submit"]:hover{
+    background: linear-gradient(235deg,#E41B17,#00BFFF);
+}
+section .contentbx .formbx .remember{
+    margin-bottom: 10px;
+    color: #607d8b;
+    font-weight: 400;
+    font-size: 14px;
+}
+section .contentbx .formbx .inputbx p{
+    color:#E41B17 ;
+}
+section .contentbx .formbx .inputbx p a{
+    color: #00BFFF;
+}
+section .contentbx .formbx h3{
+    color: #607d8b;
+    text-align: center;
+    margin: 40px 0 10px;
+    font-weight: 500;
+}
+section .contentbx .formbx .sci{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section .contentbx .formbx .sci li{
+    list-style: none;
+    width:50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #607d8b ;
+    margin: 0 7px;
+    cursor: pointer;
+}
+section .contentbx .formbx .sci li:hover{
+    background: linear-gradient(235deg,#E41B17,#00BFFF);
+}
+@media (max-width: 768px){
+    section .imgbx{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    section .contentbx{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
+    section .contentbx .formbx{
+        width: 100%;
+        padding: 40px;
+        background: rgb(255 255 255 / 0.9);
+        margin: 50px;
+    }
+    section .contentbx .formbx h3{
+        color: #607d8b;
+        text-align: center;
+        margin: 30px 0 10px;
+        font-weight: 500;
+    }
+}

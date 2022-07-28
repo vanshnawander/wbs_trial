@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang"en">
+	<head>
+		<meta charset="UTF-8">
+		<title> LET US SIGN UP</title>
+		<link href="{{ url_for('static', path='\in.css') }}" rel="stylesheet">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	</head>
+	<body>
+		<div class="container">
+		<div class="logo"><img src="5.jpg" class="logo1"></div>
+			<div class="title">Register</div>
+			<form action="/registration" method="post">
+				<div class="user-details">
+					<div class="input-box">
+						<span class="details" >Full Name</span>
+						<input type="text" placeholder="Enter your name" name="fullname" required>
+					</div>
+					<div class="input-box">
+						<span class="details" >Email ID</span>
+						<input type="email" placeholder="Enter your emailid" name="email" required>
+					</div>
+					<div class="input-box">
+						<span class="details" >College</span>
+						<input type="text" placeholder="Enter your college" name="college" required>
+					</div>
+					<div class="input-box">
+						<span class="details" >Domain Of Graduation</span>
+						<input type="text" placeholder="Eg: CSE/IT/MECH/CIVIL/ECE/EEE" name= "domain"  required>
+					</div>
+					<div class="input-box">
+						<span class="details" >Year Of Graduation</span>
+						<input type="text" placeholder="Enter your year of graduation" name="year" required>
+					</div>
+					<div class="input-box">
+						<span class="details" >Date of Birth</span>
+						<input type="date" placeholder="Enter your data of birth" 
+						name="dob" required>
+					</div>
+					<div class="input-box">
+						<span class="details" >Address</span>
+						<input type="text" placeholder="Enter your permanent address" name="address" required>
+					</div>
+					<div class="input-box">
+						<span class="details" >Username</span>
+						<input type="text" placeholder="Enter your username" name="username"  required>
+					</div>
+					<div class="input-box">
+						<span class="details" >Password</span>
+						<input type="password" placeholder="Confirm your password" name="password" required>
+					</div>
+					<div class="input-box">
+						<span class="details" >Confirm Password</span>
+						<input type="password" placeholder="Confirm your password" name="cpassword" required>
+					</div>
+				</div>
+				<div class="button">
+					<input type="submit" value="Register">
+				</div>
+			</form>
+		</div>
+	</body>
+</html>
