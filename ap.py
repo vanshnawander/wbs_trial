@@ -39,7 +39,7 @@ class student_registration(BaseModel):
     #section: Optional[str]=None
 
 try:
-    conn= psycopg2.connect(host="localhost",database="postgres",user="postgres",password="vanshr123@&",cursor_factory=RealDictCursor)
+    conn= psycopg2.connect(host="localhost",database="postgres",user="postgres",password="vansh",cursor_factory=RealDictCursor)
      
     cursor=conn.cursor() 
     print("databasse connected")
